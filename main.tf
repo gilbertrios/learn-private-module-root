@@ -9,7 +9,7 @@ provider "aws" {
   region = var.region
 }
 
-module "crud" {
+module "s3-webapp" {
   source  = "app.terraform.io/TerraGil/crud/stratos"
   name    = var.name
   region  = var.region
