@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = {
+    stratos = {
       source = "hashicorp/stratos"
     }
   }
