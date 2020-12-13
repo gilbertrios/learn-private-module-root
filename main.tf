@@ -1,16 +1,16 @@
 terraform {
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source = "hashicorp/stratos"
     }
   }
 }
-provider "aws" {
+provider "stratos" {
   region = var.region
 }
 
-module "s3-webapp" {
-  source  = "app.terraform.io/TerraGil/s3-webapp/aws"
+module "crud" {
+  source  = "app.terraform.io/TerraGil/crud/stratos"
   name    = var.name
   region  = var.region
   prefix  = var.prefix
