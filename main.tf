@@ -1,11 +1,11 @@
 terraform {
   required_providers {
-    stratos = {
-      source = "terraform/stratos"
+    aws = {
+      source = "terraform/aws"
     }
   }
 }
-provider "stratos" {
+provider "aws" {
   region = var.region
 }
 
